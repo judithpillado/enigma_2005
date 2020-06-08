@@ -7,4 +7,13 @@ class Offset
     @date = date
   end
 
+  def squared_date
+    squared = @date.to_i * @date.to_i
+    strings = squared.to_s.chars[-4..-1]
+    offsets = strings.map do |string|
+      string.to_i
+    end
+    offsets
+  end
+
 end
