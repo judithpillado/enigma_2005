@@ -5,4 +5,8 @@ class Key
     @input = randomize_numbers
   end
 
+  def randomize_numbers
+    rand(5 ** 5).to_s.rjust(5, '0')
+  end
+
 end
