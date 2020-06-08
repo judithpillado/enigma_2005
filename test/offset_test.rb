@@ -13,6 +13,10 @@ class OffsetTest < Minitest::Test
 
   def test_squared_date
     assert_equal 4, @offset.squared_date.length
-  end 
+  end
+
+  def test_it_formats_a_date
+    assert_instance_of Hash, @offset.assign_offsets
+  end
 
 end
